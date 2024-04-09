@@ -1,0 +1,80 @@
+.board-container {
+  max-width: 1400px;
+  margin: auto;
+  padding: 16px;
+ background-color: white
+
+}
+
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  width: 100%; 
+}
+
+.flight-table {
+    width: 100%;
+  }
+  
+  .flight-table .flight-table-header {
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #343a40; /* Dark blue background for header */
+  }
+  
+  .flight-table .MuiTableCell-root {
+    padding: 8px;
+  }
+  
+  .flight-details-cell {
+    color: black;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  
+  .flight-details-link {
+    color: black;
+    text-decoration: underline;
+    font-weight: bold;
+  }
+  
+  /* Define styles for odd and even rows */
+  .flight-table tbody tr:nth-child(odd) {
+    background-color: #e9ecef; /* Light blue background for odd rows */
+  }
+  
+  .flight-table tbody tr:nth-child(even) {
+    background-color: #f8f9fa; /* Lighter blue background for even rows */
+  }
+  
+  @keyframes example {
+    0%   { opacity:0}
+    
+    50%  {  opacity:0.5}
+   
+    100% {opacity:1}
+  }
+  
+
+  .flight-animate {
+    animation-name: example;
+    animation-duration: 2s;
+  }
+
+  @media (max-width: 768px) {
+    .flight-table {
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .flight-table th,
+    .flight-table td {
+      padding: 4px 8px;
+    }
+  }
+  
+

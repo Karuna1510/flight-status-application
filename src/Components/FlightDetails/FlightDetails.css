@@ -1,0 +1,71 @@
+
+.board-container {
+  max-width: 1400px;
+  margin: auto;
+  padding: 16px;
+ background-color: white
+
+}
+
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  width: 100%; 
+}
+.flight-table-container {
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  @media (min-width: 992px) {
+    .flight-table-container {
+      max-width: 600px; /* Add padding-bottom only for laptop view */
+    }
+  }
+  
+  .flight-table-details {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 50px;
+  }
+  
+  .flight-table-details th,
+  .flight-table-details td {
+    border: 1px solid #cfcaca96;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .flight-table-details th {
+    background-color: #343a40d1;
+  }
+  
+ 
+  
+ 
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .flight-table-details {
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .flight-table-details th,
+    .flight-table-details td {
+      padding: 4px 8px;
+    }
+  }
+  
+  .center-content {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+

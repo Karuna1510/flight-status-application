@@ -1,0 +1,117 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #343a40;
+  padding: 8px;
+}
+
+@media (min-width: 992px) {
+  .container {
+    margin-bottom: 10px; /* Add padding-bottom only for laptop view */
+  }
+}
+
+
+  .leftContent {
+    display: flex;
+    align-items: center;
+  }
+  
+  .leftContent .title {
+    color: white;
+    margin-top: 10px;
+     margin-left: 10px;
+     font-size: 28px;
+  }
+  @media (min-width: 992px) {
+    .leftContent .title {
+      font-size: 33px; /* Add padding-bottom only for laptop view */
+    }
+  }
+  
+  .icon {
+    width: 50px;
+    height: 40px;
+    margin-right: 10px;
+    background-color: yellow; /* Add this line */
+    padding: 5px; /* Optional: Add padding for better visual */
+  }
+  
+  @media (min-width: 992px) {
+    
+    .icon {
+        margin-left: 15px; /* Increase margin-right for laptops */
+    }
+}
+  .rightContent {
+    display: flex;
+    align-items: center;
+  }
+  .timeContainer {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+  }
+  
+  .timeDigit {
+    background-color: yellow;
+    color: black;
+    font-size: 26px;
+    margin-right: 3px; 
+    padding: 5px; 
+  }
+  
+  .calendarContainer {
+    display: flex;
+   
+    align-items: center;
+  }
+  
+  
+  
+  .calendarIcon {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    margin-left: 10px; 
+    margin-right: 10px;
+  }
+  .calendarIcon {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    margin-left: 10px; 
+    margin-right: 10px; /* Default margin-right value for mobile */
+}
+
+@media (min-width: 992px) {
+    
+    .calendarIcon {
+        margin-right: 15px; /* Increase margin-right for laptops */
+    }
+}
+  .calendarIcon svg {
+    font-size: 40px; 
+  }
+  
+  .monthText {
+    color: white;
+    font-size: 22px; 
+  
+  }
+  
+  .dateText {
+    position: absolute;
+    bottom: 3px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 18px;
+  }
+  
+
